@@ -51,6 +51,7 @@ class GameInitializer {
         incrementalLoot = clientConnection.getNextLong();
         heroCount = clientConnection.getNextInt();
         assistCount = clientConnection.getNextInt();
+        gameManageable.createMonster();
         isLoaded = validateSave();
     }
 

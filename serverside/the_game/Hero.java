@@ -99,7 +99,8 @@ class Hero extends Character{
     }
 
     void toggleAssistant(){
-        assistantAttackable.toggleAssistant();
+        if (hasAssist())
+            assistantAttackable.toggleAssistant();
     }
 
     void interruptAssistant(){

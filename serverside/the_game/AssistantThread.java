@@ -23,7 +23,6 @@ class AssistantThread extends Thread implements AssistantAttackable{
                 sleep(1000);
             }
         } catch (InterruptedException e) {
-            System.out.println("Assistant Thread closed.");
         }
     }
 

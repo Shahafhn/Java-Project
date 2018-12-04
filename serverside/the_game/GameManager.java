@@ -141,8 +141,8 @@ public class GameManager implements GameManageable {
         if (gameData.hero.hasAssist())
             gameData.hero.interruptAssistant();
     }
-
-    private void createMonster(){            //if boss, multiply by ↓
+    @Override
+    public void createMonster(){            //if boss, multiply by ↓
         long tempHP = gameData.stage == 5 ? gameData.incrementalHP * 5 : gameData.incrementalHP;
         long tempLoot = gameData.stage == 5 ? gameData.incrementalLoot * 7 : gameData.incrementalLoot;
         Random random = new Random(System.currentTimeMillis());
